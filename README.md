@@ -38,12 +38,16 @@ The script will:
 |------|---------|
 | `--skip-deps` | Skip package installs |
 | `--skip-agent` | Skip Cursor Agent |
+| `--skip-rust` | Skip rustup / Rust toolchain |
 | `--copy` | Copy files instead of symlink |
 | `--no-sync` | Skip Lazy plugin sync |
+| `--force` | Replace existing `~/.config/nvim` |
 
 ```bash
 ./setup.sh --skip-deps --skip-agent
 ```
+
+The script also installs rustup (if needed), builds native plugins (`avante`, `telescope-fzf-native`), installs a Nerd Font on macOS, and prints a health check.
 
 After install, authenticate the agent once if needed:
 
