@@ -1,0 +1,21 @@
+# Neovim runtime / local state (never commit)
+.netrwhist
+*.swp
+*.swo
+*~
+
+# Accidental plugin / packer / mason installs inside the config tree
+pack/
+plugin/
+spell/
+*.spl
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Local overrides (optional personal tweaks)
+lua/local.lua
+init.local.lua
+.env
+.env.*
